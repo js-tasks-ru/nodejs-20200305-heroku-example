@@ -13,6 +13,7 @@ const app = new Koa();
 app.use(require('koa-static')('public'));
 app.use(require('koa-bodyparser')());
 
+
 app.use(async (ctx, next) => {
   try {
     await next();
